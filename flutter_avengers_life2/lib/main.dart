@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Avengers',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.grey,
+        brightness: Brightness.dark,
       ),
       home: LoginPage(),
     );

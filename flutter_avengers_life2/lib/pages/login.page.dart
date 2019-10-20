@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_avengers_life2/pages/signup.page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -7,23 +8,23 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.only(top: 40, left: 40, right: 40),
-        color: Colors.amber[50],
+        color: Colors.black,
         child: ListView(
           children: <Widget>[
             SizedBox(
-              width: 130,
+              width: 140,
               height: 128,
-              child: Image.asset("assets/avengers-logo-png-avengers1-png-2943.png"),
+              child: Image.asset("assets/avengers-logo-620x250.png"),
             ),
             SizedBox(//espaçamento entre a imagem e o próximo campo
-              height: 10,
+              height: 5,
             ),
             TextFormField(
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
                 labelText: "Username",
                 labelStyle: TextStyle(
-                  color: Colors.black38,
+                  color: Colors.white,
                   fontWeight: FontWeight.w400, //quase negrito
                   fontSize: 20,
                 )
@@ -41,13 +42,13 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                   labelText: "Password",
                   labelStyle: TextStyle(
-                    color: Colors.black38,
+                    color: Colors.white,
                     fontWeight: FontWeight.w400, //quase negrito
                     fontSize: 20,
                   )
               ),
               style: TextStyle(
-                fontSize: 10,
+                fontSize: 15,
               ),
             ),
             Container(
@@ -62,7 +63,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 30,
+              height: 25,
             ),
             Container(
               height: 60,
@@ -73,8 +74,8 @@ class LoginPage extends StatelessWidget {
                   end: Alignment.bottomLeft,
                   stops: [0.3, 1],
                   colors: [
-                    Color(0xFFFFE082),
-                    Color(0xFFFFC107),
+                    Color(0xFFBDBDBD),
+                    Color(0xFF757575),
                   ],
                 ),
                 borderRadius: BorderRadius.all(
@@ -90,14 +91,14 @@ class LoginPage extends StatelessWidget {
                         "Login",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: Colors.white,
                           fontSize: 20,
                         ),
                         textAlign: TextAlign.left,
                       ),
                       Container(
                         child: SizedBox(
-                          child: Image.asset("assets/avengers-symbol-png-16.png"),
+                          child: Image.asset("assets/avengers-logo-icon-0.png"),
                           height: 33,
                           width: 33,
                         ),
@@ -131,7 +132,7 @@ class LoginPage extends StatelessWidget {
                         "Login with Facebook",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: Colors.white,
                           fontSize: 20,
                         ),
                         textAlign: TextAlign.left,
@@ -161,7 +162,14 @@ class LoginPage extends StatelessWidget {
                   "Register",
                   textAlign: TextAlign.center,
                 ),
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SignupPage(),
+                    ),
+                  );
+                },
               ),
             ),
           ],
