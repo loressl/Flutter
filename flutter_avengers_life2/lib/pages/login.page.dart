@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_avengers_life2/pages/reset.password.page.dart';
 import 'package:flutter_avengers_life2/pages/signup.page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -59,7 +60,14 @@ class LoginPage extends StatelessWidget {
                   "Recover Password",
                   textAlign: TextAlign.right,
                 ),
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ResetPasswordPage(),
+                    ),
+                  );
+                },
               ),
             ),
             SizedBox(
