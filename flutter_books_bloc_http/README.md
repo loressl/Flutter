@@ -1,3 +1,5 @@
+Referência: https://www.youtube.com/playlist?list=PLum90SMJW-vn-1p0JdIrTuZfjNqNT2V6E
+
 # flutter_books_bloc_http
 
 A new Flutter application.
