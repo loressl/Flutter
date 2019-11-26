@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_avengers_life2/pages/login.page.dart';
+import 'package:flutter_avengers_life2/pages/login2.page.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: LoginPage(),
+      home: LoginPage2(),
     );
   }
 }
